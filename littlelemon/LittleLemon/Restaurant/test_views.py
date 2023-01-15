@@ -10,15 +10,15 @@ from restaurant.serializers import MenuSerializer
 
 class MenuViewTest(TestCase):
     menu_items = [
-        MenuItem(title="potato", price=10, inventory=8),
-        MenuItem(title="flan", price=50, inventory=82),
-        MenuItem(title="mani", price=15, inventory=18),
+        MenuItem(title="potato", price=10, inventory=3),
+        MenuItem(title="flan", price=20, inventory=12),
+        MenuItem(title="mani", price=15, inventory=14),
     ]
 
     def setup(self):
-        MenuItem.objects.create(title="potato", price=10, inventory=8)
-        MenuItem.objects.create(title="flan", price=50, inventory=2)
-        MenuItem.objects.create(title="mani", price=15, inventory=18)
+        MenuItem.objects.create(title="potato", price=10, inventory=3)
+        MenuItem.objects.create(title="flan", price=20, inventory=12)
+        MenuItem.objects.create(title="mani", price=15, inventory=14)
 
     def test_getall(self):
         self.setup()
