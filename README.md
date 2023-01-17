@@ -1,3 +1,3 @@
 # LittleLemon
-## Final for Meta Course
+## Final for Meta
 ### Pipenv shell -> django-admin... -> python manage.py ...
